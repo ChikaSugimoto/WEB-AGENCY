@@ -1,0 +1,288 @@
+@charset "utf-8";
+
+/****** 全体設定 ******/
+
+h2 {
+	color: #fff;
+}
+
+p {
+	color: #fff;
+}
+
+html {
+	font-size: 14px;
+}
+
+body {
+	/* 行間 */
+	line-height: 1.5;
+	font-family: "Arial", "メイリオ", "Meiryo", sans-serif;
+	background-color: #555;
+	background-image: url(../img/bg.png);
+}
+
+/****** リンク設定 ******/
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/****** ボタンの基本設定 ******/
+.btn {
+	/* 横並びでありブロックレベル要素のスタイルが使える */
+	display: inline-block;
+	/* background-color:red; */
+	padding: 1em 2em;
+	/*1em=16px*/
+	color: #fff;
+	margin-top: 10px;
+	transition: 0.5s;
+	/*アニメーション*/
+}
+
+.btn:hover {
+	color: #fff;
+}
+
+/****** 画像の隙間対策 ******/
+img {
+	vertical-align: bottom;
+}
+
+/****** header ******/
+header {
+	height: 50px;
+	/* 背景色 */
+	background-color: #4d4d4d;
+	/* 要素の固定 */
+	position: fixed;
+	/* 横幅を回復 */
+	width: 100%;
+	top: 0;
+	left: 0;
+	/* ほかの要素より上に表示させたい */
+	/* positionが設置されていないと利かない */
+	z-index: 9999;
+}
+
+/****** メインビジュアル ******/
+.mv {
+	background: #555;
+	background-image: url(../img/webagency_main.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-blend-mode: overlay;
+}
+
+.mv img {
+	max-width: 80%;
+}
+
+/****** メインコンテンツ ******/
+main {
+	padding: 30px 0;
+	background-color: #555;
+}
+
+main .inner {
+	padding: 10px 0;
+}
+
+main .inner>div {
+	text-align: center;
+}
+
+/****** アイコン ******/
+
+/* .inner div[class^="service"] di dt { */
+.service dl dt,
+.staff dl dt {
+	font-weight: bold;
+	margin: 20px 0 10px;
+	color: #fff;
+}
+
+.panel {
+	background-color: #4d4d4d;
+	border: #4d4d4d;
+}
+
+.service {
+	margin: 20px auto;
+}
+
+.panel dl {
+	color: #fff;
+}
+
+.service dl dt span,
+.news span,
+.staff span,
+.contact span {
+	font-size: 150%;
+	/*1.5em*/
+	/* 文字間隔 カーニング */
+	letter-spacing: 3px;
+}
+
+.service_plan span {
+	color: #f4b1d3;
+}
+
+.service_design span {
+	color: #b2c8fd;
+}
+
+.service_operate span {
+	color: #b5dea0;
+}
+
+.service_plan .btn {
+	background-color: #f4b1d3;
+}
+
+.service_design .btn {
+	background-color: #b2c8fd;
+}
+
+.service_operate .btn {
+	background-color: #b5dea0;
+}
+
+.service_plan .btn:hover {
+	background-color: #fff;
+	color: #f4b1d3;
+}
+
+.service_design .btn:hover {
+	background-color: #fff;
+	color: #b2c8fd;
+}
+
+.service_operate .btn:hover {
+	background-color: #fff;
+	color: #b5dea0;
+}
+
+/****** news ******/
+.news ul {
+	margin: 0 auto;
+}
+
+.news ul li {
+	/* list-style-type マークの種類 */
+	/* list-style-image マークに画像を指定 */
+	/* list-style-position マークの位置 */
+	list-style-type: circle;
+	margin-left: 1.5em;
+	margin-bottom: 0.7em;
+	/* 縦割りにしたいので使用 */
+	display: flex;
+}
+
+.news ul li a {
+	color: #fff;
+}
+
+.news ul li a:hover {
+	color: #303030;
+}
+
+.news {
+	color: #fff;
+}
+
+/****** staff ******/
+.staff figure img {
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+.staff .btn {
+	background-color: #303030;
+	margin-top: 20px;
+}
+
+.staff .btn:hover {
+	background-color: #fff;
+	color: #303030;
+}
+
+.staff p {
+	text-align: right;
+}
+
+.staff dl dt {
+	margin: 14px 0 16.8px 0;
+}
+
+.staff {
+	width: 100%;
+	color: #fff;
+}
+
+/****** contact ******/
+
+.contact {
+	text-align: center;
+	background-color: #555;
+	padding: 2em 0;
+}
+
+.contact .btn {
+	background-color: #b085d6;
+}
+
+.contact .btn:hover {
+	background-color: #fff;
+	color: #b085d6;
+}
+
+.contact img {
+	margin-bottom: 10px;
+	width: 50px;
+}
+
+/* .contact p:nth-child(3) */
+.contact p:first-of-type {
+	/* contactの子要素でp要素の1番目 */
+	margin-bottom: 18px;
+	font-size: 130%;
+	font-weight: bold;
+	color: #be7897;
+}
+
+.top {
+	margin-left: 80%;
+}
+
+.top a {
+	text-decoration: none;
+	font-size: 16px;
+	color: rgb(35, 35, 35);
+}
+
+.top a:hover {
+	color: #fff;
+}
+
+/****** footer ******/
+footer {
+	padding: 15px 0;
+	background-color: #4d4d4d;
+}
+
+footer p {
+	text-align: center;
+	color: #b0b0b0;
+}
